@@ -27,7 +27,7 @@ function getInfo(){
         sucessAlert.style.display = 'block';
     }
 }
-updateBody();
+// updateBody();
 
 function getInfoForEnroll(){
     const enrollName = document.getElementById("name1").value;
