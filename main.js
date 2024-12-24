@@ -36,9 +36,9 @@ function getInfoForEnroll(){
     const enrollEmail = document.getElementById("email1").value;
     const enrollCv = document.getElementById("cv1").value;
     if (enrollName.value == " " || enrollCountry.value == " " || enrollEmail == " ") {
-        faildAlert.style.display= 'block';
+        alert("faild enroll try again");
     } else if(enrollName.value !== " " && enrollCountry.value !== " " && enrollEmail !== " ") {
-        sucessAlert.style.display = 'block';
+        alert("success enroll thank you");
     }
 }
 
