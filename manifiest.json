@@ -1,0 +1,22 @@
+{
+    "project": {
+      "name": "COMBO",
+      "version": "1.0.0",
+      "description": "A brief description of your project.",
+      "author": "Samer abou alaenaen",
+      "license": "MIT",
+      "scripts": {
+        "start": "main.js",
+        "test": "jest"
+      },
+      "settings": {
+        "environment": "development",
+        "port": 3000
+      },
+      "files": [
+        "main.js",
+        "index.html",
+        "style.css"
+      ]
+    }
+}
