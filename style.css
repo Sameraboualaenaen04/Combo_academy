@@ -38,15 +38,15 @@ nav{
         color: rgba(0,234,144,255);
     }
     .socail1 a{
-        left: 330px;
+        left: 380px;
         top: 375px;
     }
     .socail2 a{
-        left: 330px;
+        left: 380px;
         top: 430px;
     }
     .socail3 a{
-        left: 330px;
+        left: 380px;
         top: 485px;
     }
     header{
@@ -84,7 +84,7 @@ nav{
         flex-direction: column;
     }
     .arrow{
-        left: 40px;
+        left: 380px;
         top: 800px;
     }
 }
