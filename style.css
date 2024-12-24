@@ -83,9 +83,9 @@ nav{
         display: flex;
         flex-direction: column;
     }
-    .arrow a svg{
+    .arrow{
         left: 380px;
-        top: 620px;
+        top: 600px;
     }
 }
 .teacherH1{
