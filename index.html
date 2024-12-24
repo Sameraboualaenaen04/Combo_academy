@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/download.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/images/download.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -29,7 +29,7 @@
           <div class="nav-section-1">
             <div class="logo">
                 <div class="fs-2 mb-3">
-                    <img src="./images/download.png" alt="" style="margin-top: -12px; width: 50px; display: flex; align-content: center; align-items: center;">
+                    <img src="./images/images/download.png" alt="" style="margin-top: -12px; width: 50px; display: flex; align-content: center; align-items: center;">
                   </div>
             </div>
           </div>
@@ -317,7 +317,7 @@
 
       <form class="row g-3">
         <div class="col-md-4">
-          <label for="validationServer01" class="form-label">First name</label>
+          <label for="validationServer01" class="form-label" id="name1">First name</label>
           <input type="text" class="form-control" id="validationServer01" required>
         </div>
         <div class="col-md-4">
@@ -547,7 +547,7 @@
           <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" onclick="getInfo()">Submit form</button>
+          <button class="btn btn-primary" onclick="getInfo()" >Submit form</button>
         </div>
       </form>
      </div>
@@ -675,7 +675,7 @@
     </footer>
     <!--Buttons  -->
     <div class="arrow">
-<a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
+<a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
   </svg>
