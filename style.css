@@ -83,7 +83,7 @@ nav{
         display: flex;
         flex-direction: column;
     }
-    .arrow{
+    .arrow a svg{
         left: 380px;
         top: 620px;
     }
