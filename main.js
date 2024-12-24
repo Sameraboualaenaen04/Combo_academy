@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             emojiEl.classList.remove("active");
             if (idx === index) {
                 emojiEl.classList.add("active");
-                reviewMessage.textContent = getReviewMessage(index);
+                // reviewMessage.textContent = getReviewMessage(index);
             }
     });
 }
