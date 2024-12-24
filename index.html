@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/download.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Combo</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>BIG OFFER</strong> You should check in on some of those fields below for free😊.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>    
+     <nav>
+        <div class="nav-container">
+          <div class="nav-section-1">
+            <div class="logo">
+                <div class="fs-2 mb-3">
+                    <img src="./images/download.png" alt="" style="margin-top: -12px; width: 50px; display: flex; align-content: center; align-items: center;">
+                  </div>
+            </div>
+          </div>
+            <div class="nav-section-2">
+                <div class="links">
+                    <li>
+                       <a href="#" class="btn border" id="navA1">Home</a>
+                       <a href="#explore-courses" class="btn border" id="navA2">Courses</a>
+                       <a href="#Teacher" class="btn border" id="navA4">Tutor</a>
+                       <a href="#About-section" class="btn border" id="navA3">About</a>
+                    </li>
+                </div>
+            </div>
+              <div class="nav-section-3">
+                <div class="sign-button">
+                    <button  style="background-color: #273239;" class="btn text-light" id="signBtn" data-bs-toggle="modal" data-bs-target="#signInModal">Sign-in</button>
+                </div>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" class="input" id="dark-mode">
+                    <label for="dark-mode" class="label">
+                        <div class="circle"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+     </nav>
+       
+     <div class="nav-checkBoxes">
+        <div class="aLinks">
+            <div class="dropdown">
+            <button class="btn text-dark" id="drop-button">DSA</button>
+            <div class="DSA-content" id="dsa-contnet">
+            <a href="./courses/linkedlist.html">Linked List</a>
+            <a href="./courses/stack.html">Stack</a>
+            <a href="./courses/hash.html">Hash table</a>
+            <a href="./courses/heaps.html">Heaps</a>
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn text-dark" id="drop-button">C#</button>
+                <div class="DSA-content">
+                    <a href="./indexes/CSharp.html">Introduction</a>
+                    <a href="./indexes/CSharp.html">Syntax</a>
+                    <a href="./indexes/CSharp.html">Examples</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn text-dark" id="drop-button">JAVASCRIPT</button>
+                <div class="DSA-content">
+                   <a href="./indexes/JAVASCRIPT.html">Introduction</a>
+                   <a href="./indexes/JAVASCRIPT.html">Syntax</a>
+                   <a href="./indexes/JAVASCRIPT.html">Examples</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn text-dark" id="drop-button">PYTHON</button>
+                <div class="DSA-content">
+                    <a href="./indexes/PYTHON.html">Introduction</a>
+                    <a href="./indexes/PYTHON.html">Syntax</a>
+                    <a href="./indexes/PYTHON.html">Examples</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Hero -->
+    <header style="background-color: rgba(232,255,248,255);">
+        <div class="Hero">
+            <div class="col-md-6 hero">
+                <h3>want to learn <span class="auto-play text-success"></span></h3>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+                          <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+                      </svg>
+                  </span>
+                  <input type="text" class="form-control" id="searchInput" placeholder="Search for courses..." autocomplete="off" aria-label="Search" aria-describedby="basic-addon1">
+                  <button class="btn btn-primary" id="searchButton">Search</button>
+                </div>
+                <div class="input_item result-Box d-flex flex-column bg-light">
+                  
+                </div>
+                <div id="google_translate_element" class="translate"></div>
+          </div>
+        </div>
+    </header>
+     <!-- modal -->
+    <div class="modal" tabindex="-1" id="signInModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="faild-alert" role="alert">
+              <strong>Check the information🤔</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> 
+            <div class="alert alert-success alert-dismissible fade show" id="success-alert" style="display: none;" role="alert">
+              <strong>Succeed sign-in😁</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" aria-required="true"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title">Sign In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="age">Age: </label>
+              <input type="number" id="age" placeholder="19">
+              <label for="email">email: </label>
+              <input type="email" id="email" placeholder="..@gmail.com">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="getInfo()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- About -->
+    <div class="container col-xxl-8 px-4 py-5" id="About-section">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./images/images/893b44fb07b1815483c9e5b3dad17e9f.jpg" class="d-flex mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Who us</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          </div>
+        </div>
+    </div>
+    <!-- Courses -->
+    <div class="explore-courses">
+        <h2 class="explore-title">Explore Our Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <h3>Data Structures</h3>
+                <img src="./images/Four Semesters of Computer Science in Six Hours.gif" alt="" width="220px" height="300px">
+                <p>Learn about various data structures and their applications.</p>
+                <button class="btn enroll-button" data-bs-toggle="modal" data-bs-target="#enroll"><a style="color: red;">Enroll Now</a></button>
+            </div>
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <img src="./images/Learn web development as an absolute beginner (2021) - Coder Coder.gif" alt="" width="220px" height="300px">
+                <p>Learn about various data structures and their applications.</p>
+                <button class="btn enroll-button" data-bs-toggle="modal" data-bs-target="#enroll"><a style="color: red;">Enroll Now</a></button>
+            </div>
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <img src="./images/Artificial Intelligence (1).gif" alt="" width="220px" height="300px">
+                <p>Learn about various data structures and their applications.</p>
+                <button class="btn enroll-button" data-bs-toggle="modal" data-bs-target="#enroll"><a style="color: red;">Enroll Now</a></button>
+            </div>
+            <div class="course-card">
+                <h3>Excel for Beginners</h3>
+                <img src="./images/Excel Icon Animation.gif" alt="" width="220px" height="300px">
+                <p>Learn about various data structures and their applications.</p>
+                <button class="btn enroll-button" data-bs-toggle="modal" data-bs-target="#enroll"><a style="color: red;">Enroll Now</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal" tabindex="-1" id="enroll">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="faild-alert" role="alert">
+            <strong>Check the information🤔</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div> 
+          <div class="alert alert-success alert-dismissible fade show" id="success-alert" style="display: none;" role="alert">
+            <strong>Succeed sign-in😁</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" aria-required="true"></button>
+          </div>
+          <div class="modal-header">
+            <h5 class="modal-title">Enroll</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center flex-column">
+            <label for="name">Name: </label>
+            <input type="text" id="name1" placeholder="Your name" required>
+            <label for="country">country: </label>
+            <input type="text" id="country1" placeholder="Syria" required>
+            <label for="selectSituation">Situation: </label>
+            <select name="" id="selectSituation">
+              <option value="" id="option1">Company</option>
+              <option value="" id="option2">Student</option>
+              <option value="" id="option3">University education</option>
+            </select>
+            <label for="email">email: </label>
+            <input type="email" id="email1" placeholder="..@gmail.com" required>
+            <label for="cv">CV: </label>
+            <input type="file" name="cv" id="cv1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button"  id = "enroll_btn" onclick="getInfoForEnroll()" class="btn btn-primary">Enroll</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Qoute section -->
+    <section class="vh-70" style="background-color: #fff;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-9 col-xl-7">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+    
+                <div class="text-center mb-4 pb-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+                    alt="Bulb" width="100">
+                </div>
+    
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote">
+                    <p class="pb-3">
+                      <i class="fas fa-quote-left fa-xs text-primary"></i>
+                      <span class="lead font-italic">Many of life's failures are people who did not realize how
+                        close they were to success when they gave up.</span>
+                      <i class="fas fa-quote-right fa-xs text-primary"></i>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    Thomas Edison
+                  </figcaption>
+                </figure>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Youtube channel section -->
+    <div class="container-xxl py-5 mx-auto">
+          <div class="themecolor">
+            <div class="container px-lg-5  d-flex  youtube_section">
+              <div class="col-lg-6">
+                <img class="img-fluid" data-wow-delay="0.5s" src="./images/b20fcf6f-feff-47d3-b0e4-d2cc1525e3ec.gif" alt="About Jp" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn; width: 300px;">
+              </div>
+              <div class="col-lg-6 d-flex flex-column align-items-center" data-wow-delay="0.1s">
+                <div class="section-title position-relative">
+                  <p class="subheading text-center" style="font-size: 25px;"><strong>Youtube Channel</strong></p>
+                  <h2 class="mt-2 mediumheading text-center">Explore Latest Tutorials by
+                    Subscribing to Our YouTube Channel</h2>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                  <a class="btn btn-primary rounded-pill px-4 me-3 btntheme" target="_blank" href="https://www.youtube.com/@samer_is_code_it_now"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                      Join Now</a>
+              </div>
+              </div>
+            </div>
+          </div>
+   
+    </div>
+
+
+    <!-- Teacher -->
+    <div class="w3-col l6 w3-center d-flex align-center flex-column text-center" id="Teacher" style="padding:2%;">
+      <div class="teacherH1">For Teachers</div>
+      <div class="col-6-lg d-flex teaching_section">
+        <ul>
+        <li  alt="Checkmark">Manage your classroom</li>
+        <li  alt="Checkmark">Ready-to-use learning materials</li>
+        <li  alt="Checkmark">Customize study plans</li>
+        </ul>
+        <div style="text-align:center;">
+        <ul>
+          <li alt="Checkmark">Track student progress</li>
+          <li alt="Checkmark">Interactive coding challenges</li>
+        </ul>
+        </div> 
+      </div>
+
+      <div class="w3-col l4 w3-center align-center flex-column text-center">
+      <h1 style="font-size:50px;font-weight:500;margin-bottom:18px!important" class="text-danger">
+        <span id="toturWord">Be</span>
+        <span id="toturWord">a</span>
+        <span id="toturWord">totur</span>
+        <span id="toturWord">now!</span>
+
+      </h1>
+      </div>
+
+
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationServer01" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationServer02" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer03" class="form-label">Age</label>
+          <input type="number" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer04" class="form-label">State</label>
+          <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Afghanistan</option>
+            <option>Albania</option>
+            <option>Algeria</option>
+            <option>Andorra</option>
+            <option>Angola</option>
+            <option>Antigua and Barbuda</option>
+            <option>Argentina</option>
+            <option>Armenia</option>
+            <option>Australia</option>
+            <option>Austria</option>
+            <option>Azerbaijan</option>
+            <option>The Bahamas</option>
+            <option>Bahrain</option>
+            <option>Bangladesh</option>
+            <option>Barbados</option>
+            <option>Belarus</option>
+            <option>Belgium</option>
+            <option>Belize</option>
+            <option>Benin</option>
+            <option>Bhutan</option>
+            <option>Bolivia</option>
+            <option>Bosnia and Herzegovin</option>
+            <option>Botswana</option>
+            <option>Brazil</option>
+            <option>Brunei</option>
+            <option>Bulgaria</option>
+            <option>Burkina Faso</option>
+            <option>Burundi</option>
+            <option>Cabo Verde</option>
+            <option>Cambodia</option>
+            <option>Cameroon</option>
+            <option>Canada</option>
+            <option>Central African Repub</option>
+            <option>Chad</option>
+            <option>Chile</option>
+            <option>China</option>
+            <option>Colombia</option>
+            <option>Comoros</option>
+            <option>Congo, Democratic Rep</option>
+            <option>Congo, Republic of th</option>
+            <option>Costa Rica</option>
+            <option>Côte d’Ivoire</option>
+            <option>Croatia</option>
+            <option>Cuba</option>
+            <option>Cyprus</option>
+            <option>Czech Republic</option>
+            <option>Denmark</option>
+            <option>Djibouti</option>
+            <option>Dominica</option>
+            <option>Dominican Republic</option>
+            <option>East Timor</option>
+            <option>Ecuador</option>
+            <option>Egypt</option>
+            <option>El Salvador</option>
+            <option>Equatorial Guinea</option>
+            <option>Eritrea</option>
+            <option>Estonia</option>
+            <option>Eswatini</option>
+            <option>Ethiopia</option>
+            <option>Fiji</option>
+            <option>Finland</option>
+            <option>France</option>
+            <option>Gabon</option>
+            <option>The Gambia</option>
+            <option>Georgia</option>
+            <option>Germany</option>
+            <option>Ghana</option>
+            <option>Greece</option>
+            <option>Grenada</option>
+            <option>Guatemala</option>
+            <option>Guinea</option>
+            <option>Guinea-Bissau</option>
+            <option>Guyana</option>
+            <option>Haiti</option>
+            <option>Honduras</option>
+            <option>Hungary</option>
+            <option>Iceland</option>
+            <option>India</option>
+            <option>Indonesia</option>
+            <option>Iran</option>
+            <option>Iraq</option>
+            <option>Ireland</option>
+            <option>Israel</option>
+            <option>Italy</option>
+            <option>Jamaica</option>
+            <option>Japan</option>
+            <option>Jordan</option>
+            <option>Kazakhstan</option>
+            <option>Kenya</option>
+            <option>Kiribati</option>
+            <option>Korea, North</option>
+            <option>Korea, South</option>
+            <option>Kosovo</option>
+            <option>Kuwait</option>
+            <option>Kyrgyzstan</option>
+            <option>Laos</option>
+            <option>Latvia</option>
+            <option>Lebanon</option>
+            <option>Lesotho</option>
+            <option>Liberia</option>
+            <option>Libya</option>
+            <option>Liechtenstein</option>
+            <option>Lithuania</option>
+            <option>Luxembourg</option>
+            <option>Madagascar</option>
+            <option>Malawi</option>
+            <option>Malaysia</option>
+            <option>Maldives</option>
+            <option>Mali</option>
+            <option>Malta</option>
+            <option>Marshall Islands</option>
+            <option>Mauritania</option>
+            <option>Mauritius</option>
+            <option>Mexico</option>
+            <option>Micronesia, Federated</option>
+            <option>Moldova</option>
+            <option>Monaco</option>
+            <option>Mongolia</option>
+            <option>Montenegro</option>
+            <option>Morocco</option>
+            <option>Mozambique</option>
+            <option>Myanmar (Burma)</option>
+            <option>Namibia</option>
+            <option>Nauru</option>
+            <option>Nepal</option>
+            <option>Netherlands</option>
+            <option>New Zealand</option>
+            <option>Nicaragua</option>
+            <option>Niger</option>
+            <option>Nigeria</option>
+            <option>North Macedonia</option>
+            <option>Norway</option>
+            <option>Oman</option>
+            <option>Pakistan</option>
+            <option>Palau</option>
+            <option>Panama</option>
+            <option>Papua New Guinea</option>
+            <option>Paraguay</option>
+            <option>Peru</option>
+            <option>Philippines</option>
+            <option>Poland</option>
+            <option>Portugal</option>
+            <option>Qatar</option>
+            <option>Romania</option>
+            <option>Russia</option>
+            <option>Rwanda</option>
+            <option>Saint Kitts and Nevis</option>
+            <option>Saint Lucia</option>
+            <option>Saint Vincent and the</option>
+            <option>San Marino</option>
+            <option>Sao Tome and Principe</option>
+            <option>Saudi Arabia</option>
+            <option>Senegal</option>
+            <option>Serbia</option>
+            <option>Seychelles</option>
+            <option>Sierra Leone</option>
+            <option>Singapore</option>
+            <option>Slovakia</option>
+            <option>Slovenia</option>
+            <option>Solomon Islands</option>
+            <option>Somalia</option>
+            <option>South Africa</option>
+            <option>Spain</option>
+            <option>Sri Lanka</option>
+            <option>Sudan</option>
+            <option>Sudan, South</option>
+            <option>Suriname</option>
+            <option>Sweden</option>
+            <option>Switzerland</option>
+            <option>Syria</option>
+            <option>Taiwan</option>
+            <option>Tajikistan</option>
+            <option>Tanzania</option>
+            <option>Thailand</option>
+            <option>Togo</option>
+            <option>Tonga</option>
+            <option>Trinidad and Tobago</option>
+            <option>Tunisia</option>
+            <option>Turkey</option>
+            <option>Turkmenistan</option>
+            <option>Tuvalu</option>
+            <option>Uganda</option>
+            <option>Ukraine</option>
+            <option>United Arab Emirates</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Uruguay</option>
+            <option>Uzbekistan</option>
+            <option>Vanuatu</option>
+            <option>Vatican City</option>
+            <option>Venezuela</option>
+            <option>Vietnam</option>
+            <option>Yemen</option>
+            <option>Zambia</option>
+            <option>Zimbabwe</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer05" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" onclick="getInfo()">Submit form</button>
+        </div>
+      </form>
+     </div>
+
+    <!-- Team work section -->
+    <section class=" Team_work_section py-3 py-md-5 py-xl-8 team_work  mb-5"  style="background: rgba(232, 255, 248, 255);">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="mb-4 display-5 text-center">Our Team</h2>
+        <p class="text-secondary mb-5 text-center lead fs-4">We are a group of innovative, experienced, and proficient teams. You will love to collaborate with us.</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+   
+  <div class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-0 gx-xxl-5 "style="margin-bottom: 20px;">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="team_card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class=" team-member card-body p-0 d-flex flex-column align-items-center justify-content-center">
+            <figure class="m-0 p-0">
+              <img class="img-fluid d-flex mx-auto team_img" loading="lazy" src="./images/11.jpg" alt="Flora Nyra">
+              <figcaption class="m-0 p-4 text-center">
+                <h4 class="mb-1">Flora Nyra</h4>
+                <p class="text-secondary mb-0">Product Manager</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="team_card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="team-member card-body p-0 d-flex flex-column align-items-center justify-content-center">
+            <figure class="m-0 p-0">
+              <img class="img-fluid d-flex mx-auto team_img" loading="lazy" src="./images/21.jpg" alt="Evander Mac">
+              <figcaption class="m-0 p-4 text-center">
+                <h4 class="mb-1">Evander Mac</h4>
+                <p class="text-secondary mb-0">Art Director</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="team_card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class="card-body p-0 d-flex flex-column align-items-center justify-content-center">
+            <figure class="m-0 p-0">
+              <img class="team-member img-fluid d-flex mx-auto team_img" loading="lazy" src="./images/68.jpg" alt="Taytum Elia">
+              <figcaption class="m-0 p-4 text-center">
+                <h4 class="mb-1">Taytum Elia</h4>
+                <p class="text-secondary mb-0">Investment Planner</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="team_card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+          <div class=" team-member card-body p-0 d-flex flex-column align-items-center justify-content-center">
+            <figure class="m-0 p-0">
+              <img class="img-fluid d-flex mx-auto team_img" loading="lazy" src="./images/32.jpg" alt="Wylder Elio">
+              <figcaption class="m-0 p-4 text-center">
+                <h4 class="mb-1">Wylder Elio</h4>
+                <p class="text-secondary mb-0">Financial Analyst</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+    <!--Feedback  -->
+    <div class="feedback-section d-flex flex-column justify-content-center align-items-center">
+  <h2>Rate Us!</h2>
+  <div class="stars">
+      <span class="rate">★</span>
+      <span class="rate">★</span>
+      <span class="rate">★</span>
+      <span class="rate">★</span>
+      <span class="rate">★</span>
+  </div>
+  <div class="emojis">
+      <span class="emoji" data-value="0">😡</span>
+      <span class="emoji" data-value="1">😐</span>
+      <span class="emoji" data-value="2">😊</span>
+      <span class="emoji" data-value="3">😁</span>
+      <span class="emoji" data-value="4">😍</span>
+  </div>
+  <div class="review-message" id="reviewMessage"></div>
+    </div>
+     <!--Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footer">
+    <section class="p-2">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Combo academy</h6>
+                    <p>Established December 18, 2024 for scientific purposes.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                    <p><a href="./indexes/DSA.html" class="text-reset">Data Structures</a></p>
+                    <p><a href="./indexes/PYTHON.html" class="text-reset">Python</a></p>
+                    <p><a href="./indexes/C++.html" class="text-reset">C++</a></p>
+                    <p><a href="./indexes/EXCEL.html" class="text-reset">Excel</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Help Team</h6>
+                    <p><a href="#!" class="text-reset">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i>Damascus, Almazzeh, SY</p>
+                    <p><i class="fas fa-envelope me-3"></i> sameraboualaenaen@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i>+963 946 452 948</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <div class="text-center p-4 copyright" style="background-color: rgba(232,255,248,255);">
+    © 2024 Copyright
+  </div>
+    </footer>
+    <!--Buttons  -->
+    <div class="arrow">
+<a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+  </svg>
+</a>
+    </div>
+    <div class="social">
+<div class="socail1">
+<a href="https://github.com/Sameraboualaenaen04" target="_blank" id="scrollButton" class="btn btn-info btn-floating btn-lg btn-dark">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+  </svg>
+</a>
+</div>
+<div class="socail2">
+<a href="https://www.linkedin.com/in/samer-abou-alaenaen-856b51262/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B3XHAnsa2S9Sh%2BojQ2k4iPA%3D%3D" target="_blank" id="scrollButton" class="btn btn-info btn-floating btn-lg btn-primary">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+  </svg>
+</a>
+</div>
+<div class="socail3">
+<a href="https://www.youtube.com/@samer_is_code_it_now" target="_blank" id="scrollButton" class="btn btn-info btn-floating btn-lg btn-danger">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+  </svg>
+</a>
+</div>
+    </div>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+              {pageLanguage: 'en'},
+              'google_translate_element'
+          );
+      }
+    </script>
+    <script type="text/javascript" 
+     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script type="text/javaScript"src="//translate.google.com/translate_a/element.js?cb= googleTranslateElementInit"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-play",{
+        strings: ["Web Development", "Machine learning", "Programming", "Data analysis"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true
+      });
+    </script>
+  </body>
+</html>
