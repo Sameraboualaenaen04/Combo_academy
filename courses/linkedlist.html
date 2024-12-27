@@ -17,7 +17,8 @@
       referrerpolicy="no-referrer"
     />
     <title>Combo</title>
-</head>
+<head>
+
 <body>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>BIG OFFER</strong> You should check in on some of those fields below for free😊.
@@ -74,16 +75,6 @@
                 <a href="./indexes/CSharp.html">Examples</a>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button class="btn text-dark" id="drop-button">JAVASCRIPT</button>
-            <div class="DSA-content">
-               <a href="./indexes/JAVASCRIPT.html">Introduction</a>
-               <a href="./indexes/JAVASCRIPT.html">Syntax</a>
-               <a href="./indexes/JAVASCRIPT.html">Examples</a>
-            </div>
-        </div>
-
         <div class="dropdown">
             <button class="btn text-dark" id="drop-button">PYTHON</button>
             <div class="DSA-content">
@@ -94,66 +85,125 @@
         </div>
     </div>
    </div>  
-   
-   <div class="div" style="height: 2000px;">
-    Linked List Data Structure
-    Last Updated : 04 Dec, 2024
-    A linked list is a fundamental data structure in computer science. It mainly allows efficient insertion and deletion operations compared to arrays. Like arrays, it is also used to implement other data structures like stack, queue and deque. Here’s the comparison of Linked List vs Arrays
-    
-    Linked List:
-    
-    Data Structure: Non-contiguous
-    Memory Allocation: Typically allocated one by one to individual elements
-    Insertion/Deletion: Efficient
-    Access: Sequential
-    Array:
-    
-    Data Structure: Contiguous
-    Memory Allocation: Typically allocated to the whole array
-    Insertion/Deletion: Inefficient
-    Access: Random
-   </div>
 
-<footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footer">
-    <section class="p-2">
-        <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Combo academy</h6>
-                    <p>Established December 18, 2024 for scientific purposes.</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                    <p><a href="./indexes/DSA.html" class="text-reset">Data Structures</a></p>
-                    <p><a href="./indexes/PYTHON.html" class="text-reset">Python</a></p>
-                    <p><a href="./indexes/C++.html" class="text-reset">C++</a></p>
-                    <p><a href="./indexes/EXCEL.html" class="text-reset">Excel</a></p>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Help Team</h6>
-                    <p><a href="#!" class="text-reset">Help</a></p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i>Damascus, Almazzeh, SY</p>
-                    <p><i class="fas fa-envelope me-3"></i> sameraboualaenaen@gmail.com</p>
-                    <p><i class="fas fa-phone me-3"></i>+963 946 452 948</p>
-                </div>
+    <div class="container">
+        <h1>An In-Depth Exploration of Linked Lists</h1>
+        <h2>Introduction</h2>
+        <p>Linked lists are a fundamental data structure in computer science, characterized by a linear sequence of elements where each element points to the next. Unlike arrays, linked lists provide dynamic memory allocation, which allows for efficient insertion and deletion of elements. This article delves into the intricate workings of linked lists, discussing their types, operations, and applications.</p>
+
+        <h2>Types of Linked Lists</h2>
+        <p>Linked lists can be classified into several types based on their structure and functionality:</p>
+        <ul>
+            <li><strong>Singly Linked List:</strong> Each node points to the next node in the sequence, forming a unidirectional chain.</li>
+            <li><strong>Doubly Linked List:</strong> Each node contains pointers to both the previous and the next node, allowing for bidirectional traversal.</li>
+            <li><strong>Circular Linked List:</strong> The last node points back to the first node, creating a circular structure.</li>
+        </ul>
+
+        <h2>Node Structure</h2>
+        <p>Each node in a linked list typically consists of two parts:</p>
+        <ul>
+            <li><strong>Data:</strong> Stores the element or value.</li>
+            <li><strong>Pointer:</strong> Contains the address of the next node.</li>
+        </ul>
+        <p>In a doubly linked list, an additional pointer is included:</p>
+        <ul>
+            <li><strong>Previous Pointer:</strong> Points to the preceding node.</li>
+        </ul>
+
+        <h2>Operations on Linked Lists</h2>
+        <p>The primary operations on linked lists include:</p>
+        <ul>
+            <li><strong>Insertion:</strong> Adding a new node to the list.
+                <ul>
+                    <li><strong>At the beginning:</strong> Adjust the head pointer to the new node.</li>
+                    <li><strong>At the end:</strong> Traverse to the end and update the last node's pointer.</li>
+                    <li><strong>At a specific position:</strong> Traverse to the desired position and adjust the pointers accordingly.</li>
+                </ul>
+            </li>
+            <li><strong>Deletion:</strong> Removing a node from the list.
+                <ul>
+                    <li><strong>From the beginning:</strong> Update the head pointer to the second node.</li>
+                    <li><strong>From the end:</strong> Traverse to the penultimate node and set its pointer to null.</li>
+                    <li><strong>From a specific position:</strong> Adjust the pointers of the surrounding nodes.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Applications of Linked Lists</h2>
+        <p>Linked lists are employed in various real-world applications due to their dynamic and flexible nature. Some common applications include:</p>
+        <ul>
+            <li><strong>Implementation of Stacks and Queues:</strong> Linked lists provide the underlying structure for these abstract data types.</li>
+            <li><strong>Dynamic Memory Allocation:</strong> They are used in memory management systems to handle free and allocated memory blocks.</li>
+            <li><strong>Graph Representation:</strong> Linked lists can represent adjacency lists in graph data structures, optimizing space and traversal efficiency.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Linked lists are a versatile data structure that offers significant advantages over arrays in specific scenarios, particularly when dynamic memory management is required. Understanding the intricacies of linked lists, including their types, operations, and applications, is crucial for computer scientists and software engineers seeking to implement efficient and effective algorithms.</p>
+    </div>
+
+    <div class="modal" tabindex="-1" id="signInModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="faild-alert" role="alert">
+              <strong>Check the information🤔</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> 
+            <div class="alert alert-success alert-dismissible fade show" id="success-alert" style="display: none;" role="alert">
+              <strong>Succeed sign-in😁</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" aria-required="true"></button>
             </div>
+            <div class="modal-header">
+              <h5 class="modal-title">Sign In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="age">Age: </label>
+              <input type="number" id="age" placeholder="19">
+              <label for="email">email: </label>
+              <input type="email" id="email" placeholder="..@gmail.com">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="getInfo()">Submit</button>
+            </div>
+          </div>
         </div>
-    </section>
-  <div class="text-center p-4 copyright" style="background-color: rgba(232,255,248,255);">
-    © 2024 Copyright
-  </div>
-    </footer>
+      </div>
+
     <!--Buttons  -->
     <div class="arrow">
-<a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
-  </svg>
-</a>
-    </div>
-    <script src="main.js" defer></script>
+     <a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+       </svg>
+     </a>
+     </div>
+     
+     <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footer">
+        <section class="p-2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Combo academy</h6>
+                        <p>Established December 18, 2024 for scientific purposes.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i>Damascus, Almazzeh, SY</p>
+                        <p><i class="fas fa-envelope me-3"></i> sameraboualaenaen@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i>+963 946 452 948</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <div class="text-center p-4 copyright" style="background-color: rgba(232,255,248,255);">
+        © 2024 Copyright
+      </div>
+     </footer>
+
+    <script src="../main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
