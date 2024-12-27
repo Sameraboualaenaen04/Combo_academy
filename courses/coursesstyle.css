@@ -182,3 +182,27 @@ nav{
     text-decoration: underline;
     color: rgba(0,234,144,255);
 }
+@media(max-width: 768px){
+    .nav-section-2{
+        display: none;;
+    }
+    .nav-section-3{
+        display: none;
+    }
+    .nav-checkBoxes .aLinks .dropdown #drop-button{
+        width: 2px;
+        font-size: 12px;
+    }
+    .dropdown:hover .DSA-content a{
+        font-size: 12px;
+    }
+    .dropdown .DSA-content a:hover{
+        font-size: 12px;
+        text-decoration: underline;
+        color: rgba(0,234,144,255);
+    }
+    .arrow{
+        left: 380px;
+        top: 600px;
+    }
+}
